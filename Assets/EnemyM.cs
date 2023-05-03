@@ -132,7 +132,7 @@ public class EnemyM : MonoBehaviour
     {
         if(other.collider.CompareTag("Player"))
         {
-            Attack();
+            Invoke("Attack", 0.5f);
         }
     }
     void OnCollisionExit2D(Collision2D other)
